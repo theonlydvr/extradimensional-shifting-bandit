@@ -24,6 +24,11 @@ const audioCodes = {
   type: "sine",
 };
 
+const reward = new Audio('/sounds/reward.mp3');
+reward.preload = 'auto';
+const no_reward = new Audio('/sounds/no-reward.mp3');
+no_reward.preload = 'auto';
+
 const taskName = "honeycomb template";
 
 // is this mechanical turk?
@@ -86,4 +91,6 @@ export {
   eventCodes,
   config,
   audioCodes,
+  reward,
+  no_reward
 };

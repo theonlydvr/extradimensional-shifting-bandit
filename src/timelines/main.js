@@ -16,16 +16,7 @@ import {
 } from "../trials/quizTrials";
 
 let primaryTimeline = [
-  preamble,
-  ageCheck,
-  sliderCheck,
-  countdown({ message: lang.countdown.message1 }),
-  taskBlock(practiceBlock),
-  countdown({ message: lang.countdown.message2 }),
-  taskBlock(exptBlock1),
-  demographics,
-  iusSurvey,
-  debrief,
+  taskBlock()
 ];
 
 if (config.USE_CAMERA) {
