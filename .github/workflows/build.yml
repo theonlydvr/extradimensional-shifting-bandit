@@ -19,14 +19,14 @@ jobs:
         setting: [home, clinic]
         video: [on, off]
         os: [ubuntu-latest, macOS-latest, windows-latest]
-        exclude: 
-          # exclude clinic video on ubuntu-latest 
+        exclude:
+          # exclude clinic video on ubuntu-latest
           - os: ubuntu-latest
             setting: clinic
-            video: on 
+            video: on
           - os: macOS-latest
             setting: clinic
-            video: on 
+            video: on
           - os: ubuntu-latest
             setting: home
             video: on
@@ -43,6 +43,9 @@ jobs:
           node-version: 12.x
 
       # install, test, build package
+      - run: >
+          git config --global url."https://github.com/".insteadOf
+          git://git@github.com/
       - name: npm install
         run: |
           npm config set "//npm.pkg.github.com/:_authToken" ${{ secrets.GITHUB_TOKEN }}
