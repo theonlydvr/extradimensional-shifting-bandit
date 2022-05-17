@@ -13,7 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         setting: ['home', 'clinic' ]
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        os: [ubuntu-latest, macOS-latest, windows-2019]
 
 
     steps:
@@ -28,6 +28,8 @@ jobs:
         id: package_info
 
       # install, test, build package
+      - run: >
+          git config --global url."https://".insteadOf git://
       - name: npm install
         run: |
           npm config set "//npm.pkg.github.com/:_authToken" ${{ secrets.GITHUB_TOKEN }}
