@@ -1,8 +1,8 @@
-const actionTrial = (red) => {
-  if (red) {
-    return `<div class="beads_container"><div class="circle" style="background-color: red"></div><div class="circle" style="background-color: green"></div></div>`
+const actionTrial = (c1) => {
+  if (c1) {
+    return `<div class="beads_container"><div class="circle c1"></div><div class="circle c2" ></div></div>`
   } else {
-    return `<div class="beads_container"><div class="circle" style="background-color: green"></div><div class="circle" style="background-color: red"></div></div>`
+    return `<div class="beads_container"><div class="circle c2"></div><div class="circle c1"></div></div>`
   }
 }
 

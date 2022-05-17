@@ -3,7 +3,6 @@ import { jitter50 } from '../lib/utils'
 import { pdSpotEncode, photodiodeGhostBox } from '../lib/markup/photodiode'
 import { fixationHTML } from '../lib/markup/fixation'
 import { jsPsych } from 'jspsych-react'
-import $ from 'jquery'
 
 const fixation = (duration, jittered=true, green=false, hideCursor=true) => {
   let stimulus = fixationHTML(green) + photodiodeGhostBox()

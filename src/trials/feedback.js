@@ -1,9 +1,8 @@
-import { eventCodes } from '../config/main'
-import { jitter50 } from '../lib/utils'
+import { eventCodes, lang } from '../config/main'
 import { pdSpotEncode, photodiodeGhostBox } from '../lib/markup/photodiode'
 import { feedbackHTML } from '../lib/markup/feedback'
 import { jsPsych } from 'jspsych-react'
-import $ from 'jquery'
+import { tooSlow } from '../lib/markup/actionMarkup'
 
 const feedback = () => {
   let stimulus = feedbackHTML(true) + photodiodeGhostBox()
@@ -19,7 +18,13 @@ const feedback = () => {
     on_start: (trial) => {
       let preData = jsPsych.data.get().values();
       preData = preData[preData.length-1]
-      trial.stimulus = feedbackHTML(preData.rewarded) + photodiodeGhostBox()
+      if (preData.key_press == null) {
+        trial.stimulus = tooSlow(lang.prompt.too_slow) + photodiodeGhostBox()
+        trial.trial_duration = 2000
+      } else {
+        trial.stimulus = feedbackHTML(preData.rewarded) + photodiodeGhostBox()
+        trial.trial_duration = 750
+      }
     },
     on_load: () => {
       pdSpotEncode(code)

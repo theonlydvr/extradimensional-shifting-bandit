@@ -3,19 +3,13 @@ import taskBlock from "./taskBlock";
 import { countdown } from "@brown-ccv/behavioral-task-trials";
 import { cameraStart, cameraEnd } from "../trials/camera"
 import { lang, config } from "../config/main";
-import { practiceBlock } from "../config/practice";
 import { tutorialBlock } from "../config/tutorial";
-import { exptBlock1, exptBlock2 } from "../config/experiment";
+import { exptBlock2 } from "../config/experiment";
 import { showMessage } from "@brown-ccv/behavioral-task-trials";
-import {
-  ageCheck,
-  sliderCheck,
-  demographics,
-  iusSurvey,
-  debrief,
-} from "../trials/quizTrials";
+import instructions from "../trials/instructions";
 
 let primaryTimeline = [
+  instructions(),
   taskBlock()
 ];
 

@@ -33,7 +33,17 @@
   "instructions": {
     "adjust_volume": "Set tablet volume to 50/100.",
     "camera": "Make sure the camera is pointing to you and your face is within the camera area.",
-    "check_event_marker": "Make sure the event marker is connected and then continue."
+    "check_event_marker": "Make sure the event marker is connected and then continue.",
+    "welcome": "Welcome to the circles task!<br/>During this task you will see two circles on the screen. Like this...",
+    "throughout": "<br/>Throughout the task you should use the <b>F</b> key to select the circle on the LEFT, and the <b>J</b> key to select the circle on the RIGHT.",
+    "screen2": "One circle is “correct” and the other is “incorrect”, but at first you won’t know which. <br/>Your task is to select which circle is “correct” as quickly and accurately as possible. <br/>There is no ABSOLUTE right answer, but some circles have a higher chance of being correct than others. Try to pick the circle that has the highest chance of being correct.<br/>Once you have decided which of the two circles is more likely to be correct, stick with it. You can change your mind if you feel that your first choice was wrong.",
+    "screen3": "To make the task trickier, the correct circle will change every now and then. Thus, you may figure out the 'correct' circle, but start getting feedback that you are wrong after a while. This may mean that the 'correct' circle has changed, and you should try choosing the other circle.<br/>When you feel like the correct circle has changed, you should start choosing the other circle, sticking with that one until you think that it is no longer correct.<br/>Remember to pick the circle that has the highest chance of being correct.",
+    "screen4": "To make the task EVEN trickier, there are two possible types of features you can use to make your decision about which circle is correct:<br/>The SIDE the circle is on.<br/>OR<br/>The COLOR of the circle.<br/>You will need to figure out which type of feature (SIDE or COLOR) you should be using to make your decision about which circle is correct. Only one feature type will be correct at any given time.<br/>Once you have decided which feature to use to select the correct circle, stick with it.<br/>However, the type of feature you should use also changes from time to time- When you feel like the correct feature has changed, you should start choosing based on the other feature, sticking with that one until you think that it is no longer correct.",
+    "screen5": "On each trial, after you make your response you will see…<br/>A green checkmark if you chose correctly. Like this…",
+    "screen5_2": "OR<br/>A red X if you chose incorrectly. Like this…",
+    "screen6": "You will see a small cross at the beginning of each trial. Like this…",
+    "screen6_2": "You should try to blink only when the cross is on the screen.",
+    "screen7": "Some reminders before you begin the task:<br/>Your goal is to select the “correct” circle; the correct circle may change sometimes.<br/>You can use two types of features to make your decision: SIDE or COLOR; the feature you should use also changes sometimes.<br/>Use the F key to select the circle on the LEFT, and the J key to select the circle on the RIGHT.<br/>Make your responses as quickly and accurately as possible: If your response is too slow, you will get a warning message before the next trial.<br/>The task will last 15-20 minutes.<br/>Press Next to begin the task."
   },
   "quiz": {
     "ask": {
