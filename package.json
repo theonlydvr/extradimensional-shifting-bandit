@@ -1,5 +1,5 @@
 {
-  "name": "extradimensional-shifting-bandit",
+  "name": "Circles",
   "description": "all-in-one task starter app with jsPsych + React + Electron + psiturk ",
   "author": {
     "name": "Evan Dastin-van Rijn",
@@ -40,7 +40,7 @@
     "start:browser": "react-scripts start",
     "test": "react-scripts test",
     "prebuild": "electron-rebuild",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "package:windows": "electron-packager . --platform win32 --arch x64 --icon ./assets/icons/win/icon.ico --out dist/ --overwrite --asar ",
     "package:mac": "electron-packager . --platform darwin --arch x64 --out dist/ --icon ./assets/icons/mac/icon.icns --overwrite",
     "package:linux": "electron-packager . --platform linux --arch x64 --icon ./assets/icons/mac/icon.icns --out dist/ --overwrite",
